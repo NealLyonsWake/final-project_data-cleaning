@@ -50,5 +50,5 @@
     - `overall_branch_performance.csv`
     - `profit_per_branch.csv`
     - `region_list.csv`
-- These files are then added to the dash application in part 2 of this project. See part 2 of this project for more information.
+- These files are then added to the dash application in part 2 of this project. See part 2 of this project [here](https://github.com/NealLyonsWake/final-project_customer-dashboard) for more information.
 - Each segment of the script in `data_cleanse.ipynb` has been commented with a brief explanation. See comments for more information.
