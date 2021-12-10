@@ -23,6 +23,7 @@
 - Branch sales data, specifically the branch name is only identifiable by their filename; there is no identifiable branch information within the file and therefore it would not be possible to merge with any other file using a branch name. There would need to be a way of efficiently adding a new `branch_name` field into the branch sales data that uses part of the filename as the value of this field.
 - As per the brief the headings of each file will need to be made consistent.
 - The `quantity` field within the data does not appear to be a number data type. This field should be converted to an integer to enable use of `sum()` to avoid the risk of concatenating strings.
+- On converting the `quantity` field to an integer it was noted that an invalid character was present in the data consisting of `'-'`. In order to enable correct conversion this character was replaced with a `0` as part the list comprehension process. 
 - There are many files to work through and it would not be viable to manually create a dataframe from each file; therefore, adding all files to a dataframe will be undertaken using list comprehension.
 
 ### Products_list
