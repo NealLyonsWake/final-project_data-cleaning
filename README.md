@@ -22,7 +22,7 @@
 - Branch sales data files are split approximately 50% into csv files and json files. In order to allow the data to be handled properly there will need to be an appropriate conversion undertaken to successfully merge the data into a dataframe.
 - Branch sales data, specifically the branch name is only identifiable by their filename; there is no identifiable branch information within the file and therefore it would not be possible to merge with any other file using a branch name. There would need to be a way of efficiently adding a new `branch_name` field into the branch sales data that uses part of the filename as the value of this field.
 - As per the brief the headings of each file will need to be made consistent.
-- The `quantity` field within the data does not appear to be a number data type. This field should be converted to an integer to enable use of `sum()` within the risk of concatenating strings.
+- The `quantity` field within the data does not appear to be a number data type. This field should be converted to an integer to enable use of `sum()` to avoid the risk of concatenating strings.
 - There are many files to work through and it would not be viable to manually create a dataframe from each file; therefore, adding all files to a dataframe will be undertaken using list comprehension.
 
 ### Products_list
@@ -51,5 +51,3 @@
     - `region_list.csv`
 - These files are then added to the dash application in part 2 of this project. See part 2 of this project for more information.
 - Each segment of the script in `data_cleanse.ipynb` has been commented with a brief explanation. See comments for more information.
-
-
